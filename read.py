@@ -12,8 +12,6 @@ capture = cv.VideoCapture("Videos/dog.mp4")
 while True:
     isTrue, frame = capture.read()
 
-    frame_resized = rescaleFrame(frame,scale=.2)
-
     cv.imshow('Video',frame)
 
     if cv.waitKey(20) & 0xFF==ord('d'):
